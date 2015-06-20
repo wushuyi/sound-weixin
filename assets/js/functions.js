@@ -39,7 +39,7 @@ $.fn.ready(function () {
     $el.doc = $(document);
     $el.status.text('wait....');
     var ua = navigator.userAgent.toLowerCase();
-    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+    if (ua.match(/MicroMessenger/i)) {
         $el.doc.on('WeixinJSBridgeReady', function () {
             myApp = new AudoPlay();
         });
